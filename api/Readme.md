@@ -11,7 +11,7 @@ The Movies-Database web application is an interactive platform for movie enthusi
     Registered User:
         Can create an account and log in.
         Can add reviews and ratings for movies.
-        Can edit or delete their reviews.
+        Can edit their reviews.
         Can update profile information.
 
 
