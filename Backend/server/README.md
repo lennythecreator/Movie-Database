@@ -79,7 +79,7 @@ The API uses standard HTTP status codes and returns errors in the following form
 ```json
 (error.name === '') {
     return response
-      .status(401)
+      .status(code)
       .json({ error: 'MESSAGE.' });
   }
 ```
