@@ -40,20 +40,6 @@ CineVault's backend powers the movie catalog system by handling API requests, ma
 
 ```plaintext
 pages/api/                  # API routes for backend logic
-├── getAllMovie.ts          # Fetch all movie data
-├── getAllMoviesMainParts.ts# Fetch main parts of movies
-├── getAllUsers.ts          # Fetch user details
-├── getUserWatchList.ts     # Fetch a user's watchlist
-├── MovieDetailsByCategory.ts # Fetch movies by category
-├── MovieDetailsByTitle.ts  # Fetch movies by title
-├── NewMovieRecord.ts       # Create a new movie record
-├── TrendingMovieDetails.ts # Fetch trending movie details
-├── updateMovieComments.ts  # Update movie comments
-├── updateMovieRating.ts    # Update movie ratings
-├── updateMovieRecord.ts    # Update movie details
-├── updateMovieReview.ts    # Update movie reviews
-├── updateUserType.ts       # Update user roles (Viewer, Editor, Admin)
-├── updateUserWL.ts         # Update user's watchlist
 ├── tmdb/                   # TMDB API interaction
 │   ├── getMovies.ts            # Fetch movies using TMDB API
 ```
@@ -67,7 +53,6 @@ src/app/                   # Backend utilities and helpers
 │   │   ├── [...nextauth]/ # NextAuth configuration
 │   │   │   ├── route.ts       # NextAuth authentication logic
 ├── database/              # Database utilities
-│   ├── dbmethods.ts       # Helper functions for database interaction
 ```
 
 ---
