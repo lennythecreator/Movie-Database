@@ -18,7 +18,6 @@ export const Header = () => {
             </Link>
             <nav className='flex flex-1 gap-4 items-center'>
                 <Link href={"/Genres"}>Genres</Link>
-                <Link href={"/Awards"}>Awards</Link>
                 <Link href={"/Explore"}>Explore</Link>
                 {user && user.userType === 'admin' && <Link href={"/Admin"}>Admin</Link>}
                 <div className='flex items-center gap-2 ml-auto'>
