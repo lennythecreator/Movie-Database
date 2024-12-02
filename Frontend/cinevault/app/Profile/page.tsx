@@ -65,12 +65,16 @@ export default function Profile() {
                 <p>Loading watchlist...</p>
               ) : watchList.length > 0 ? (
                 watchList.map((movie) => (
-                  <Card key={movie.id} className='h-36 p-4'>
-                    <CardHeader>{movie.title}</CardHeader>
-                    <CardContent>
-                      <p>Release Date: {movie.release_date}</p>
-                      <p>Rating: {movie.rating}</p>
-                    </CardContent>
+                  <Card key={movie.id} className='flex items-center h-36 p-4'>
+                    <img src={movie.poster_url} className='h-24 w-24 rounded-sm'/>
+                    <div className='flex flex-col'>
+                      <CardHeader>{movie.title}</CardHeader>
+                      <CardContent>
+                        <p>Release Date: {movie.release_date}</p>
+                        <p>Rating: {movie.rating}</p>
+                      </CardContent>
+                    </div>
+                    
                   </Card>
                 ))
               ) : (

@@ -104,42 +104,7 @@ export default function Explore() {
               </SelectGroup>
             </SelectContent>
           </Select>
-          <Select onValueChange={(value) => setSelectedActor(value)}>
-            <SelectTrigger className="w-44">
-              <SelectValue placeholder="Select actor" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectLabel>Actor</SelectLabel>
-                {Array.from(
-                  new Set(
-                    movies.flatMap((movie) => (movie.actors ? movie.actors.split(', ') : []))
-                  )
-                ).map((actor, index) => (
-                  <SelectItem key={index} value={actor}>
-                    {actor}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-          <Select onValueChange={(value) => setSelectedDirector(value)}>
-            <SelectTrigger className="w-44">
-              <SelectValue placeholder="Select director" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectLabel>Director</SelectLabel>
-                {Array.from(
-                  new Set(movies.map((movie) => movie.director).filter((dir) => dir))
-                ).map((director, index) => (
-                  <SelectItem key={index} value={director}>
-                    {director}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
+          
         </div>
 
         <div className="grid grid-cols-3 gap-4 mt-6">
